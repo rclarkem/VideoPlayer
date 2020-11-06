@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/progress.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body> </body>
+  <body>
+    <h1>Custom Video Player</h1>
+    <video src="videos/Kitty.mp4" id="video" class="screen" poster="imgs/poster.png"></video>
+    <div class="controls">
+      <button class="btn" id="play">
+        <ion-icon size="small" name="play-circle"></ion-icon>
+      </button>
+      <button class="btn" id="stop">
+        <ion-icon size="small" name="stop-circle"></ion-icon>
+      </button>
+      <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
 </html>
