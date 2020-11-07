@@ -21,7 +21,7 @@ h1 {
 
 .screen {
   cursor: pointer;
-  width: 50%;
+  width: 70%;
   background-color: black !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,11 +36,44 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  width: 70%;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+ion-icon {
+  font-size: 30px;
+}
+.stop-btn {
+  color: rgba(213, 30, 30, 0.6);
+}
+.play-btn {
+  color: green;
+}
+.pause-btn {
+  color: white;
+}
+
+.controls .timestamp {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 @media (max-width: 800px) {
   .screen,
   .controls {
     width: 90%;
+  }
+  ion-icon {
+    font-size: 25px;
   }
 }
