@@ -2,7 +2,7 @@ const video = document.querySelector('video');
 const play = document.querySelector('#play');
 const stop = document.querySelector('#stop');
 const timestamp = document.querySelector('#timestamp');
-
+const progress = document.querySelector('#progress');
 // Event Listeners
 video.addEventListener('click', toggleVideoStatus);
 video.addEventListener('pause', updatePlayIcon);
