@@ -44,6 +44,16 @@ function stopVideo() {
 
 function updateProgress() {
   progress.value = (video.currentTime / video.duration) * 100;
+
+  let mins = Math.floor(video.currentTime / 60);
+  if (mins < 10) {
+    mins = '0' + String(mins);
+  }
+  let sec = Math.floor(video.currentTime % 60);
+  if (sec < 10) {
+    sec = '0' + String(sec);
+  }
+  timestamp.textContent = `${mins}:${sec}`;
 }
 
 function setVideoProgress() {
